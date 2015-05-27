@@ -15,10 +15,10 @@ ShipJob.Talk.next.push Page.ShipTalkVoyeur = class ShipTalkVoyeur extends Page
 	# I suppose gender doesn't matter, but it will fit the text better if one is male and the other female.
     # Also, I suppose this could be any officer, though if Nat, the Report option will need to be replaced with something else.
   text: ->"""|| bg="Ship.deckNight"
-        #{@Kat.image 'excited', 'left'}
+        #{@Kat.image 'normal', 'left'}
     --
       While on watch, Kat hears some sounds which don't fit in with the usual sounds of creaking timbers, rigging and luffing sails. She follows her ears to investigate. Inside the hold, she finds #{@sailor} and #{@sailor2}, unclothed and entwined with each other, bare skin glistening in the starlight.
-    # TODO choice [Watch, Ignore, Report] with hints ['Indulge Kat's inner voyeur.' 'Let them have some privacy.' 'Report them to the captain.']
+    # TODO choice [Watch, Join, Ignore, Report] with hints ['Indulge Kat's inner voyeur.' 'That looks like fun! Will they let her join them? 'Let them have some privacy.' 'Report them to the captain.']
   """
 
 ShipJob.Talk.next.push Page.ShipTalkVoyeur.Watch = class ShipTalkVoyeur extends Page
@@ -29,12 +29,21 @@ ShipJob.Talk.next.push Page.ShipTalkVoyeur.Watch = class ShipTalkVoyeur extends 
         # TODO insert description here
 """
 
-ShipJob.Talk.next.push Page.ShipTalkVoyeur.Ignore = class ShipTalkVoyeur extends Page
+ShipJob.Talk.next.push Page.ShipTalkVoyeur.Join = class ShipTalkVoyeur extends Page
     text: ->"""||
     #   if exists "Ship.holdNight" then bg="Ship.holdNight"
     #   else bg="Ship.deckNight"
     --
         # TODO insert description here
+"""
+
+
+ShipJob.Talk.next.push Page.ShipTalkVoyeur.Ignore = class ShipTalkVoyeur extends Page
+    text: ->"""||
+    #   if exists "Ship.holdNight" then bg="Ship.holdNight"
+    #   else bg="Ship.deckNight"
+    --
+        <q>Well, at least <strong>someone's</strong> having fun tonight.</q> Kat returned to her duties and tried to ignore the increasingly excited sounds eminating from the hold.
 """
 
 ShipJob.Talk.next.push Page.ShipTalkVoyeur.Report = class ShipTalkVoyeur extends Page
