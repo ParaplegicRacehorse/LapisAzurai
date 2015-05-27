@@ -114,6 +114,7 @@ Page.Intro2 = class Intro2 extends Page
     || slow bg="Ship.deckDay"
       #{@Nat.image 'serious', 'left'}
 
+      -- #{q}I don't believe you,</q> she opened the door and stepped out to join him on deck. #{q}You were rather drunk last night. How are your eyes not red?</q>
 
     || bg="Ship.deckDay"
       #{@Nat.image 'excited', 'left'}
