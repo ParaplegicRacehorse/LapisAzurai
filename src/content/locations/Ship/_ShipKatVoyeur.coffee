@@ -24,8 +24,8 @@ ShipJob.Talk.next.push Page.ShipTalkVoyeur = class ShipTalkVoyeur extends Page
   text: ->"""|| bg="Ship.deckNight"
         #{@Kat.image 'normal', 'left'}
     --
-      While on watch, Kat hears some sounds which don't fit in with the usual sounds of creaking timbers, rigging and luffing sails. She follows her ears to investigate. Inside the hold, she finds #{@sailor} and #{@sailor2}, unclothed and entwined with each other, bare skin glistening in beam of moonlight.
-    # TODO choice [Watch, Join, Ignore, Report] with hints ['Indulge Kat's inner voyeur.' 'That looks like fun! Will they let her join them? 'Let them have some privacy.' 'Report them to the captain.']
+      While on watch, Kat hears some sounds which don't fit in with the usual sounds of creaking timbers, rigging and luffing sails. She follows her ears to investigate. Inside the hold, she finds #{@sailor} and #{@sailor2}, unclothed and entwined with each other, bare skin glistening in a beam of moonlight.
+    # TODO choice [Watch, Join, Ignore, Report] with hints ['Indulge Kat's inner voyeur.' 'That looks like fun! Will they let her join them?' 'Let them have some privacy.' 'Report them to the captain.']
 #
 # PER BLUEWINDS
 # Player choices are one of the more complicated things. To start with, take a look at https://github.com/ParaplegicRacehorse/LapisAzurai/blob/master/src/content/people/Kat/_preRoute.coffee#L472.
